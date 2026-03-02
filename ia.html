@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>La Creación de la Inteligencia Artificial</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(5px);
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #dcdcdc;
+        }
+
+        section {
+            padding: 50px 20%;
+            transition: transform 0.5s ease;
+        }
+
+        section:hover {
+            transform: scale(1.02);
+        }
+
+        h2 {
+            color: #00e0ff;
+            border-left: 5px solid #00e0ff;
+            padding-left: 10px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 20px;
+            box-shadow: 0 0 20px rgba(0, 224, 255, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.5);
+            font-size: 0.9em;
+            color: #aaaaaa;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        button {
+            background: #00e0ff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #00bcd4;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>La Creación de la Inteligencia Artificial</h1>
+        <p>Un recorrido completo desde sus orígenes hasta la actualidad</p>
+    </header>
+
+    <section>
+        <h2>1. ¿Qué es la Inteligencia Artificial?</h2>
+        <div class="card">
+            <p>
+                La Inteligencia Artificial (IA) es una rama de la informática que busca crear sistemas
+                capaces de realizar tareas que normalmente requieren inteligencia humana, como el
+                aprendizaje, el razonamiento, la toma de decisiones y el reconocimiento de patrones.
+            </p>
+            <p>
+                Su objetivo principal es simular procesos cognitivos humanos mediante algoritmos,
+                modelos matemáticos y grandes cantidades de datos.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>2. Origen Histórico</h2>
+        <div class="card">
+            <p>
+                El concepto de IA comenzó formalmente en 1956 durante la conferencia de Dartmouth,
+                donde científicos propusieron que las máquinas podían simular aspectos de la inteligencia humana.
+            </p>
+            <p>
+                Desde entonces, la IA ha pasado por diferentes etapas: entusiasmo inicial, inviernos
+                tecnológicos y finalmente un gran auge gracias al poder computacional moderno.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>3. Componentes Clave en la Creación de la IA</h2>
+        <div class="card">
+            <ul>
+                <li><strong>Algoritmos:</strong> Conjunto de instrucciones matemáticas.</li>
+                <li><strong>Datos:</strong> Información utilizada para entrenar modelos.</li>
+                <li><strong>Redes Neuronales:</strong> Inspiradas en el cerebro humano.</li>
+                <li><strong>Aprendizaje Automático:</strong> Sistemas que mejoran con experiencia.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>4. ¿Cómo se Entrena una IA?</h2>
+        <div class="card">
+            <p>
+                El entrenamiento consiste en alimentar un modelo con grandes volúmenes de datos para que
+                aprenda patrones. Luego, se ajustan los parámetros internos para minimizar errores.
+            </p>
+            <p>
+                Este proceso puede tardar horas, días o incluso semanas dependiendo del tamaño del modelo
+                y la cantidad de datos.
+            </p>
+            <button onclick="mostrarInfo()">Mostrar más información</button>
+            <p id="extra" class="hidden">
+                Existen distintos tipos de aprendizaje: supervisado, no supervisado y por refuerzo.
+                Cada uno tiene aplicaciones específicas en el mundo real.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>5. La IA en la Actualidad</h2>
+        <div class="card">
+            <p>
+                Hoy en día, la IA se utiliza en asistentes virtuales, sistemas de recomendación,
+                diagnóstico médico, vehículos autónomos y mucho más.
+            </p>
+            <p>
+                Gracias a los avances en hardware y procesamiento de datos, la IA continúa evolucionando
+                rápidamente y transformando múltiples industrias.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        Proyecto educativo sobre la creación de la Inteligencia Artificial | 2026
+    </footer>
+
+    <script>
+        function mostrarInfo() {
+            var elemento = document.getElementById("extra");
+            if (elemento.classList.contains("hidden")) {
+                elemento.classList.remove("hidden");
+            } else {
+                elemento.classList.add("hidden");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
